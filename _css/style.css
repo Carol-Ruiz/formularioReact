@@ -95,3 +95,20 @@ button:hover {
         padding: 12px;
     }
 }
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.modal-visible {
+    display: block; /* Solo visible cuando tiene esta clase */
+}
