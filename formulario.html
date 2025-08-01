@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./_css/style.css">
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO SENA V1</h1>
+    </header>
+    <main>
+        <h2>GRACIAS POR DEJAR SUS DATOS</h2>
+        <form>
+            <div>
+                <label for="fname">Nombre</label>
+                <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre" required>
+            </div>
+            <div>
+                <label for="email">Correo</label>
+                <input type="text" id="email" name="email" placeholder="Ingrese su correo" required>
+            </div>
+            <div>
+                <label for="age">Edad</label>
+                <input type="text" id="age" name="age" placeholder="Ingrese su edad" required>
+            </div>
+            <div>
+                <label for="country">Selecciona tu pais</label>
+                <select name="country" id="country">
+                    <option value="col">Colombia</option>
+                    <option value="ar">Argentina</option>
+                    <option value="mx">Mexico</option>
+                </select>
+            </div>
+            <div>
+                <label for="genderLiterary">¿Cuál es tu genero literario favorito?</label>
+                <div>
+                    <input type="radio" id="genderNarrative" name="genderLiterary" value="narrative">
+                    <label for="genderNarrative">Narrativo</label>
+                    <input type="radio" id="genderPoetry" name="genderLiterary" value="poetry">
+                    <label for="genderPoetry">Poético</label>
+                    <input type="radio" id="genderDramatic" name="genderLiterary" value="dramatic">
+                    <label for="genderDramatic">Dramático</label>
+                </div>
+            </div>
+            <div>
+                <label for="country">Selecciona tu idioma preferido para leer</label>
+                <select name="country" id="country">
+                    <option value="es">Español</option>
+                    <option value="en">ingles</option>
+                    <option value="it">italiano</option>
+                </select>
+            </div>
+            <div>
+                <label for="genderLiterary">¿Cuál es autor favorito?</label>
+                <div>
+                    <input type="radio" id="author" name="author" value="Gabo">
+                    <label for="authorGabo">Grabiel Garcia Marques</label>
+                    <input type="radio" id="author" name="author" value="lau">
+                    <label for="authorlau">laura restrepo </label>
+                    <input type="radio" id="author" name="author" value="isa">
+                    <label for="authorisa">isabel aliende</label>
+                    <input type="radio" id="author" name="author" value="jor">
+                    <label for="authorjor">jorge luis borges</label>
+                    <input type="radio" id="author" name="author" value="char">
+                    <label for="authorchar">charles darwin</label>
+                </div>
+            </div>
+            <div>
+                <label for="comments">Recomendacion literaria</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="¿Qué libros recomiendas?"></textarea>
+            </div>
+        </form>
+        <button>Enviar</button>
+    </main>
+</body>
+</html>
